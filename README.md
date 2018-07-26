@@ -1,14 +1,17 @@
 # Memory Game Project
-
-## Table of Contents
-
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+To start a game press this:
+> [PLAY GAME](https://katerren.github.io/memory-game/)
 
 ## Instructions
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+* When you'll open a game - it immideatly starts. 
+* If you want to refresh your time or restart a game press restart button on top the right corner.
+* To compleate a game you have to open all 16 cards. 
+* You can watch your progress and time in tip left corner.
 
-To get started, open `js/app.js` and start building out the app's functionality
+* After completing you'll see modal, which will show your results and time :)
+* If you close the modal the game will restart automatically!
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+Goos luck!
+
+To watch code [visit](https://github.com/katerren/memory-game) !

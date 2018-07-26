@@ -21,11 +21,12 @@ let deg = 360;
 window.onload = startCardGame();
 //restart button 
 restart.addEventListener("click", () => {
+    opened = []; 
     rotateRestartBtn();
     startCardGame();
 });
 
-function startCardGame() {  
+function startCardGame() { 
     cards = shuffle(cards);
     deck.innerHTML = '';    
     cards.forEach(card => {
