@@ -5,6 +5,7 @@ let cards = [...card];
 let deck = document.querySelector("ul.deck");
 //restart button
 let restart = document.querySelector(".restart");
+let endgame = document.querySelector("#btn-restart");
 //opend cards container
 let opened = [];
 //score panel
@@ -17,14 +18,27 @@ let stars = [...star];
 let interval; 
 
 let deg = 360;
+let timer = document.querySelector(".timer");
+let timeScore = document.querySelector(".time-spent");
+
 //game begins on every reload
 window.onload = startCardGame();
 //restart button 
 restart.addEventListener("click", () => {
-    opened = []; 
     rotateRestartBtn();
-    startCardGame();
+    restartGame();
 });
+
+endgame.addEventListener("click",  () => {
+    restartGame();
+    clickCounter = 0;
+    modal.style.display = "none";
+});
+
+function restartGame (){
+    opened = []; 
+    startCardGame();
+}
 
 function startCardGame() { 
     cards = shuffle(cards);
@@ -123,7 +137,7 @@ function myTimer() {
             now = new Date();
             min++;
         }
-        document.querySelector(".timer").innerHTML = min + ":" + seconds;
+        timer.innerHTML = min + ":" + seconds;
     }
 }
 
@@ -146,6 +160,8 @@ function showModal(result) {
     result.forEach((el) => {
         document.querySelector(".player-score").appendChild(el);
     })
+    clearInterval(interval);
+    timeScore.innerHTML = timer.innerHTML;
 }
 
 /*
