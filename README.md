@@ -1,4 +1,7 @@
 # Memory Game Project
+
+* all logic in game was designed and written by me
+* designs were provided from udacity
 To start a game press this:
 > [PLAY GAME](https://katerren.github.io/memory-game/)
 
@@ -15,3 +18,5 @@ To start a game press this:
 Goos luck!
 
 To watch code [visit](https://github.com/katerren/memory-game) !
+
+
